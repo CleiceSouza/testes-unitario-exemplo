@@ -1,10 +1,20 @@
 package br.com.exer01;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertAll;
 
 import org.junit.jupiter.api.Test;
 
 class Exer01Teste {
+	
+	@Test
+	void groupAssertions() {
+		Double[] numbers = {0.0, 3.7, -2.8,3.0,4.0};
+		assertAll("Grupo de Afirmações",
+				() -> assertEquals(true, new Exer01(numbers[1]).notaValida()),
+				() -> assertEquals(false, new Exer01(numbers[2]).notaValida())
+				);
+	}
 
 	@Test
 	void notaValida1() {
