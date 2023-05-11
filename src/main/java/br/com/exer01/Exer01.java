@@ -4,7 +4,6 @@ public class Exer01 {
 	
 	private Double nota;
 
-	
 	public Exer01() {
 		
 	}
@@ -31,8 +30,5 @@ public class Exer01 {
 		}
 		
 	}
-	
-	
-	
 
 }
