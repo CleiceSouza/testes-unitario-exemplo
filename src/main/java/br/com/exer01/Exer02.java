@@ -5,8 +5,8 @@ public class Exer02 {
 	private String senha;
 
 	public Exer02(String nome, String senha) {
-		this.nome = nome;
-		this.senha = senha;
+		this.setNome(nome);
+		this.setSenha(senha);
 	}
 
 	public String getNome() {
