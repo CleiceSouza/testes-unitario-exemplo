@@ -25,11 +25,11 @@ public class Exer02 {
 		this.senha = senha;
 	}
 
-	public String verificaSenha() {
-		if (nome.equalsIgnoreCase(senha)) {
-			return "Erro Senha Igual ao Nome !";
-		} else {
-			return "Confirmado Senha Diferente de Nome";
-		}
+	  public String verificaSenha() {
+	        if (this.getNome().equalsIgnoreCase(this.getSenha())) {
+	            return "Erro Senha Igual ao Nome !";
+	        } else {
+	            return "Confirmado Senha Diferente de Nome";
+	        }
+	    }
 	}
-}
